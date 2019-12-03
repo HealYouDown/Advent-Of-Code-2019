@@ -3,9 +3,6 @@ with open("Day 3/input.txt", "r") as f:
     moves_wire_1 = lines[0].split(",")
     moves_wire_2 = lines[1].split(",")
 
-#moves_wire_1 = "U7,R6,D4,L4".split(",")
-#moves_wire_2 = "R8,U5,L5,D3".split(",")
-
 def get_points(moveset: list):
     current_x = 0
     current_y = 0
