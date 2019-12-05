@@ -47,7 +47,9 @@ while True:
     
     elif optcode == 4:
         param1_value = data[index+1]
-        print("Output:", data[param1_value])
+        param1 = data[param1_value] if parameter_modes[0] == 0 else param1_value    
+
+        print("Output:", param1)
         increase = 2
 
     else:
