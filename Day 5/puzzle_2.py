@@ -13,7 +13,7 @@ while True:
     # 1 = immediate mode
     # checks the instruction string and if there are not enough modes given
     # fill up with 0's
-    parameter_modes = [0, 0, 0, 0]
+    parameter_modes = [0, 0, 0]
     for count, char in enumerate(reversed(instruction[:-2])):
         parameter_modes.insert(count, int(char))
 
@@ -40,7 +40,7 @@ while True:
         index += 2
         
         data[store_pos] = res
-    
+
     elif optcode == 4:
         param1_value = data[index+1]
         param1 = data[param1_value] if parameter_modes[0] == 0 else param1_value    
