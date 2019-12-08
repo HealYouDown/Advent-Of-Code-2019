@@ -32,7 +32,6 @@ def create_layer_image(layer):
     for y, seq in enumerate(layer):
         x = 0
         for char in seq:
-            color = colors[char]
             img.putpixel((x, y), colors[char])
             x += 1
     return img
