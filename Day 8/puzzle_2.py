@@ -1,6 +1,4 @@
 from PIL import Image
-import sys
-from typing import List
 
 with open("Day 8/input.txt", "r") as f:
     data = f.readline()
@@ -29,7 +27,7 @@ colors = {
     "2": (255, 255, 255, 0)
 }
 
-def create_layer_image(layer: List[str]):
+def create_layer_image(layer):
     img = Image.new("RGBA", (MAX_WIDTH, MAX_HEIGHT))
     for y, seq in enumerate(layer):
         x = 0
