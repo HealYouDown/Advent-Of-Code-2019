@@ -1,6 +1,3 @@
-import sys, os
-sys.path.insert(1, os.path.join(sys.path[0], '..'))
-
 from itertools import permutations
 from intcode_computer import IntcodeComputer
 
